@@ -1,19 +1,17 @@
 public class VehicleInfo {
-    private int vin;
+    private String vin;
     private double odometer;
     private double consumption;
     private double lastOilchangeReading;
     private double engineSize;
 
-    public VehicleInfo(){
-
-    }
+    public VehicleInfo(){ }
 
 
-    public int getVin() {
+    public String getVin() {
         return vin;
     }
-    public void setVin(int vin) {
+    public void setVin(String vin) {
         this.vin = vin;
     }
 

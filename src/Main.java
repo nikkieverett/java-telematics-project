@@ -7,7 +7,7 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
         System.out.println("What is your VIN number?");
-        newCar.setVin(Integer.parseInt(sc.nextLine()));
+        newCar.setVin((sc.nextLine().toString()));
 
         System.out.println("What is your current odometer reading?");
         newCar.setOdometer(Double.parseDouble(sc.nextLine()));
@@ -24,7 +24,6 @@ public class Main {
         TelematicsService newCarReport = new TelematicsService();
 
         newCarReport.report(newCar);
-        newCarReport.converter(newCar);
 
     }
 }
